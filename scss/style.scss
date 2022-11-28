@@ -25,6 +25,8 @@ body {
   flex-direction: column;
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
+  max-width: 100%;
+  width: 320px;
   overflow: hidden;
   background: #1c1938;
   position: relative;
@@ -37,7 +39,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 34.7%;
+    height: 34.3%;
     opacity: 0.8;
     background-color: hsla(277, 76%, 37%, 0.678);
   }
@@ -49,7 +51,7 @@ body {
     font-weight: 700;
     font-family: "Inter", sans-serif;
     text-align: center;
-    padding: 2rem 2rem 1rem;
+    padding: 2rem 1rem 1rem;
   }
   &--text {
     font-family: "Lexend Deca", sans-serif;
@@ -95,13 +97,14 @@ span {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) /* and (max-width:1440px) */ {
   .card {
     flex-direction: row;
+    max-width: 100%;
+    width: 992px;
     &--body {
       padding: 3rem 6rem 2rem 3rem;
     }
-
     &--options {
       display: flex;
       flex-direction: row;
@@ -119,8 +122,8 @@ span {
     &--overlay {
       position: absolute;
       top: 0;
-      left: 52.3%;
-      width: 47.7%;
+      left: 54.5%;
+      max-width: 45.5%;
       height: 100%;
       opacity: 0.8;
       background-color: hsla(277, 76%, 37%, 0.678);
